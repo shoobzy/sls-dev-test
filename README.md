@@ -32,3 +32,7 @@ Now you should be able to see the project running at localhost:9000.
 A utility-first CSS framework for rapidly building custom designs.
 
 See `tailwind.config.js` for customisation options. Documentation can be found [here](https://tailwindcss.com/docs/configuration)
+
+### Useful resources:
+
+[https://dev.to/tracycss/tailwind-css-resources-you-wish-you-had-3i18](https://dev.to/tracycss/tailwind-css-resources-you-wish-you-had-3i18)
