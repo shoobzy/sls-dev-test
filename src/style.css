@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @todo Refactor this! */
 html {
     font-size: 1rem;
 }
@@ -34,7 +33,6 @@ body {
     max-width: 164px;
 }
 
-/* Typography */
 h1 {
     @apply text-4xl font-bold font-sans mb-12;
     line-height: 130%;
@@ -69,7 +67,6 @@ h4 {
     line-height: 120%;
 }
 
-/* Buttons */
 .btn {
     @apply relative cursor-pointer;
 }
@@ -167,7 +164,6 @@ h4 {
     z-index: -1;
 }
 
-/* Forms */
 label {
     @apply block text-xl font-bold text-blue-2 text-left mb-2;
 }
@@ -274,11 +270,6 @@ input#stayInformed:checked + label svg {
     opacity: 1;
 }
 
-/* div[class*="IndicatorsContainer"] {
-    display: none;
-} */
-
-/* Misc */
 .transitionable {
     @apply transition-all ease-in-out duration-300;
 }

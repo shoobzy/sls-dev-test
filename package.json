@@ -22,8 +22,6 @@
     "css-minimizer-webpack-plugin": "^1.1.4",
     "little-state-machine": "latest",
     "little-state-machine-devtools": "1.0.0",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^5.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hook-form": "^6.8.6",
