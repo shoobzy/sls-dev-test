@@ -1,10 +1,10 @@
-# Tailwind CSS and React App boilerplate
+# SLS Marketing - Dev test
 
 ## Getting started
 
 1. Clone the repository
 ```
-git clone https://github.com/shoobzy/tailwindcss-react-boilerplate.git
+git clone https://github.com/shoobzy/sls-dev-test.git
 cd tailwindcss-react-boilerplate
 ```
 
@@ -26,13 +26,3 @@ npm run serve
 yarn run serve
 ```
 Now you should be able to see the project running at localhost:9000.
-
-## [Tailwind CSS](https://tailwindcss.com/)
-
-A utility-first CSS framework for rapidly building custom designs.
-
-See `tailwind.config.js` for customisation options. Documentation can be found [here](https://tailwindcss.com/docs/configuration)
-
-### Useful resources:
-
-[https://dev.to/tracycss/tailwind-css-resources-you-wish-you-had-3i18](https://dev.to/tracycss/tailwind-css-resources-you-wish-you-had-3i18)

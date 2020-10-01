@@ -1,0 +1,52 @@
+
+/* Forms */
+label {
+    @apply block text-xl font-bold text-blue-2 text-left mb-2;
+    line-height: 120%;
+}
+
+select,
+input[type="text"] {
+    border-radius: 5px;
+    appearance: none;
+}
+
+.selector {
+    @apply relative;
+
+    svg {
+        @apply absolute pointer-events-none;
+        right: 1.25rem;
+    }
+
+    &.lg select {
+        @apply block w-full text-2xl border-blue-1 border-2 pr-5 pl-5;
+        padding-top: 21px;
+        padding-bottom: 22px;
+        box-shadow: 0 0 16px rgba(74, 172, 238, 0.3);
+    }
+
+    input[type="text"],
+    &.sm select {
+        @apply block w-full text-base border-black border pr-4 pl-4;
+        padding-top: 9px;
+        padding-bottom: 10px;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+        @apply border-blue-1 outline-none;
+    }
+
+    &.lg svg {
+        top: 2rem;
+    }
+
+    &.sm svg {
+        top: 1rem;
+    }
+
+    &.populated select {
+        @apply bg-blue-3;
+    }
+}

@@ -1,0 +1,11 @@
+.transitionable {
+    @apply transition-all ease-in-out duration-300;
+}
+
+.modal-inner {
+    max-width: 342px;
+}
+
+.radius-5 {
+    border-radius: 5px;
+}

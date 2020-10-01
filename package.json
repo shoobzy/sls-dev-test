@@ -1,10 +1,14 @@
 {
-  "name": "tailwindcss-react",
+  "name": "sls-dev-test",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/*",
     "serve": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
@@ -12,10 +16,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
+    "@tailwindcss/ui": "^0.6.2",
     "autoprefixer": "^10.0.0",
     "css-minimizer-webpack-plugin": "^1.1.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "little-state-machine": "latest",
+    "little-state-machine-devtools": "1.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^5.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.8.6",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-select": "^3.1.0",
     "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
@@ -25,10 +39,13 @@
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
+    "favicons-webpack-plugin": "^4.2.0",
+    "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^0.11.2",
     "postcss": "^8.0.9",
     "postcss-loader": "^4.0.2",
+    "typescript": "3.3.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
