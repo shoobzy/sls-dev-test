@@ -1,0 +1,31 @@
+
+/* Typography */
+h1 {
+    @apply text-4xl font-bold font-sans mb-12;
+    line-height: 130%;
+}
+
+h2 {
+    @apply text-3xl font-bold font-sans;
+    line-height: 120%;
+}
+
+h3 {
+    @apply text-2xl font-semibold font-sans;
+    line-height: 120%;
+}
+
+.body-large {
+    @apply text-xl font-normal font-sans;
+    line-height: 120%;
+}
+
+.body-reg {
+    @apply text-base font-normal font-sans;
+    line-height: 140%;
+}
+
+.body-sm {
+    @apply text-sm font-sans;
+    line-height: 120%;
+}

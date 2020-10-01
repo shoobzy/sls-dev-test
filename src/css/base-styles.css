@@ -1,0 +1,29 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    @apply text-base font-sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 343px;
+}
+
+.wrapper {
+    @apply mr-auto ml-auto pr-8 pl-8;
+    max-width: 1014px;
+}
+
+.providers {
+    max-width: 408px;
+}
+
+.social {
+    max-width: 164px;
+}
