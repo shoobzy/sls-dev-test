@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
 import updateAction from "./updateAction";
 import { Link } from "react-router-dom";
-import compareStrip from "./components/compareStrip";
+import CompareStrip from "./components/CompareStrip";
 
 const Step2 = props => {
   const { action, state } = useStateMachine(updateAction);
@@ -42,7 +42,7 @@ const Step2 = props => {
 
   return (
     <>
-      <compareStrip />
+      <CompareStrip />
       <div className="wrapper">
         <form
           onSubmit={handleSubmit(onSubmit)}
