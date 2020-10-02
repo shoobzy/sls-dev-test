@@ -1,6 +1,19 @@
-const { colors } = require('tailwindcss/defaultTheme')
-
 module.exports = {
+  purge: {
+    content: [
+      './src/**/*.html',
+      './src/**/*.js',
+    ],
+    options: {
+      whitelist: [
+        'h-screen'
+      ],
+    }
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   theme: {
     screens: {
       xs: '320px',
@@ -8,7 +21,6 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      // xxl: '1692px',
       'print': {'raw': 'print'},
     },
     fontFamily: {

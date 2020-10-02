@@ -1,3 +1,4 @@
+
 html {
     font-size: 1rem;
 }
@@ -11,13 +12,14 @@ body {
     padding: 0;
 }
 
-form {
-    max-width: 343px;
-}
-
 .wrapper {
     @apply mr-auto ml-auto pr-8 pl-8;
     max-width: 1014px;
+}
+
+.wrapper-inner {
+    @apply text-center m-auto;
+    max-width: 343px;
 }
 
 .providers {
@@ -26,4 +28,9 @@ form {
 
 .social {
     max-width: 164px;
+}
+
+.modal-inner {
+    @apply relative w-auto my-6 mx-auto max-w-sm text-center;
+    max-width: 342px;
 }

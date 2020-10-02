@@ -5,11 +5,11 @@ import { withRouter } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
 import updateAction from "./updateAction";
 import { Link } from "react-router-dom";
-import CompareStrip from "./components/CompareStrip";
+import CompareStrip from "./components/compareStrip";
 
 const Step2 = props => {
   const { action, state } = useStateMachine(updateAction);
-  const { handleSubmit, formState, control } = useForm({
+  const { handleSubmit, control } = useForm({
     defaultValues: state.data
   });
   const onSubmit = data => {
@@ -40,24 +40,6 @@ const Step2 = props => {
     { label: "£200,000", value: "200000" },
   ];
 
-  const customStyles = value => ({
-    control: (provided, state) => ({
-      ...provided,
-      backgroundColor: value ? "#EDF7FF" : "#fff"
-    })
-  });
-
-  const [selected, setSelected] = React.useState("");
-
-  const onChange = e => {
-    setSelected(e.value);
-  };
-
-  const displayItem = selected => {
-    const item = options.find(x => x.value === selected);
-    return item ? item : { value: "", label: "" };
-  };
-
   return (
     <>
       <CompareStrip />
@@ -76,9 +58,6 @@ const Step2 = props => {
                   options={options}
                   autoFocus
                   noOptionsMessage="Not found..."
-                  onChange={onChange}
-                  value={displayItem(selected)}
-                  styles={customStyles(selected)}
                   components={{
                     DropdownIndicator:() => null,
                     IndicatorSeparator:() => null,
