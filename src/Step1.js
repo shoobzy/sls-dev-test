@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { withRouter } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
 import updateAction from "./updateAction";
-import CompareStrip from "./components/compareStrip";
+import compareStrip from "./components/compareStrip";
 import Modal from "./components/Modal";
 import useModal from "./components/useModal";
 
@@ -22,7 +22,7 @@ const Step1 = props => {
 
   return (
     <>
-      <CompareStrip />
+      <compareStrip />
       <div className="wrapper">
         <form
           onSubmit={handleSubmit(onSubmit)}
