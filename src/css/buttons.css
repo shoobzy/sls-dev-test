@@ -42,26 +42,17 @@
     @apply mb-3;
 }
 
-.btn-quote-basis svg,
-.btn-quote-basis-single svg {
-    top: 21px;
-    left: 2.5rem;
-}
-
-.btn-quote-basis svg path,
-.btn-quote-basis-single svg path {
+.btn-quote-basis svg path  {
     fill: #000;
 }
 
 .btn-quote-basis:hover svg path,
-.btn-quote-basis-single:hover svg path,
-.btn-quote-basis-single input:checked + label svg path {
+.btn-quote-basis input:checked + label svg path {
     fill: #fff;
 }
 
 .btn-quote-basis input,
 .btn-quote-basis label,
-.btn-quote-basis-single label,
 .btn-submit input {
     @apply relative bg-yellow-1 border-black border-2 text-black text-center text-2xl font-sans font-semibold outline-none pr-10 pl-10 z-10 cursor-pointer;
     padding-top: 21px;
@@ -77,21 +68,20 @@
     @apply bg-orange-2 border-orange-2;
 }
 
-.btn-quote-basis-single input:checked + label {
+.btn-quote-basis input:checked + label {
     @apply border-blue-2 text-white;
     background-image: linear-gradient(90deg, #0A76BD 6%, #4AACEE 96%);
 }
 
-.btn-quote-basis input:hover,
-.btn-quote-basis-single:hover input + label {
+.btn-quote-basis:hover input + label {
     @apply text-white border-blue-2;
     background-image: linear-gradient(90deg, #0A76BD 6%, #4AACEE 96%);
 }
 
-.btn-quote-basis-single input {
+.btn-quote-basis input {
     @apply absolute w-full h-full left-0 opacity-0 z-10 cursor-pointer;
 }
 
-.btn-quote-basis-single label {
+.btn-quote-basis label {
     z-index: -1;
 }
