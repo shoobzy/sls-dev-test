@@ -5,7 +5,7 @@
 1. Clone the repository
 ```
 git clone https://github.com/shoobzy/sls-dev-test.git
-cd tailwindcss-react-boilerplate
+cd sls-dev-test
 ```
 
 2. Install dependencies
